@@ -8,50 +8,239 @@ nav ul {
   padding: 0;
 }
 
-/* De navigatie */
-nav {
-  background-color: #47a;
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 13vh;
 }
-nav ul {
-  list-style-type: none;
+.header .logo_blue {
+  padding: 1em 0 1em 5em;
 }
-nav a, nav label {
+
+.head_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2em 1em 2em 25em;
+}
+.head_menu img {
+  padding-top: 16px;
+}
+
+@font-face {
+  font-family: Quicksand_regular;
+  src: url("../font/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: Quicksand_bold;
+  src: url("../font/Quicksand-Bold.ttf");
+}
+@font-face {
+  font-family: Quicksand_light;
+  src: url("../font/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: Quicksand_medium;
+  src: url("../font/Quicksand-Medium.ttf");
+}
+body {
+  font-family: Quicksand_regular, sans-serif;
+}
+
+.imageblock {
+  display: grid;
+  padding: 0;
+  -webkit-grid-template-columns: 1fr 1fr;
+  -moz-grid-template-columns: 1fr 1fr;
+  -ms-grid-template-columns: 1fr 1fr;
+  -o-grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  background-image: url("../content/slide-iddink1.jpg");
+  background-position: center center;
+  height: 50vh;
   color: #fff;
-  display: block;
 }
-nav a:hover, nav label:hover {
-  background-color: #355e86;
+
+.textEnButton {
+  padding: 5em 2em 5em 2em;
+  text-align: center;
 }
-nav label {
+.textEnButton p {
+  font-size: 18px;
+}
+
+.hersenen {
+  padding: 8em 0em 0em 10em;
+}
+
+.uitleg {
+  height: 45vh;
+  padding: 0em 5em 0em 5em;
+  text-align: center;
+}
+.uitleg h2 {
+  font-family: Quicksand_bold;
+  color: #0073CF;
+  padding: 1em 0em 1em 0em;
+}
+.uitleg p {
+  padding: 0 2em 0 2em;
+}
+
+.button-reference {
+  padding-top: 2em;
+  display: inline-block;
+}
+
+.ipad {
+  position: absolute;
+  left: calc(59vw);
+}
+
+#explore {
+  padding-top: 2.5em;
+}
+
+#readmore {
+  padding: 8em 0 0 10em;
+}
+
+.button-complete {
+  padding-top: 1em;
+}
+
+.button-text {
+  font-family: Quicksand_bold;
+  text-align: center;
+  padding: 13px 20px;
+  background-color: #0073CF;
+  text-align: right;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.blog {
+  display: grid;
+  -webkit-grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-template-columns: 1fr 1fr 1fr 1fr;
+  -o-grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 50vh;
+  padding: 0 5em 2em 5em;
+}
+
+.post h4, .post p {
+  width: 250px;
+}
+.post h4, .post .lees-meer {
+  color: #0073CF;
+}
+.post h4 {
+  font-family: Quicksand_bold;
+}
+.post .lees-meer {
+  font-family: Quicksand_medium;
+}
+
+.winactie {
+  background: #85BADF;
+  display: grid;
+  -webkit-grid-template-columns: 1fr 1fr;
+  -moz-grid-template-columns: 1fr 1fr;
+  -ms-grid-template-columns: 1fr 1fr;
+  -o-grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em 5em 1em 5em;
+}
+
+.ipad-win {
+  position: absolute;
+  left: calc(33vw + 30px);
+}
+
+.actieTekstEnKnop {
+  color: #fff;
+  padding: 1em 1em 2em 0;
+}
+.actieTekstEnKnop h2 {
+  font-family: Quicksand_bold;
+}
+
+.contact {
+  height: 25vh;
+  padding: 1em 5em 1em 5em;
+  text-align: center;
+}
+.contact h2 {
+  color: #0073CF;
+  font-family: Quicksand_bold;
+}
+.contact p {
+  font-size: 18px;
+  padding: 0 2em 0 2em;
+}
+
+.contact h2, .contact p, .uitleg h2, .uitleg p {
+  text-align: center;
+}
+
+.mobile {
+  position: absolute;
+  left: calc(80vw + 30px);
+}
+
+footer {
+  background: #0073CF;
+  display: grid;
+  -webkit-grid-template-columns: 1fr 1fr;
+  -moz-grid-template-columns: 1fr 1fr;
+  -ms-grid-template-columns: 1fr 1fr;
+  -o-grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 20vh;
+  padding: 1em 5em 0 5em;
+  color: #fff;
+}
+
+.menubalk {
+  display: grid;
+  -webkit-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -moz-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -o-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   text-align: right;
 }
 
-body {
-  font-family: sans-serif;
+#copyright {
+  text-align: right;
 }
 
 nav {
-  background-color: #47a;
+  background-color: #0073CF;
 }
 nav ul {
   list-style-type: none;
 }
-nav a, nav label {
+nav a {
   color: #fff;
   text-decoration: none;
   display: block;
   padding: 0.5em 1em;
 }
-nav a:hover, nav label:hover {
-  background-color: #355e86;
+nav a:hover {
+  background-color: #0073CF;
 }
 
 aside {
-  background-color: #aac4dd;
+  background-color: #0073CF;
 }
 
 footer {
-  background: #47a;
+  background: #0073CF;
+  font-family: Quicksand_medium;
 }
 
 /*# sourceMappingURL=main.css.map */
